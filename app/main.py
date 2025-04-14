@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from app.routes import previsao
 from app.routes import frequencia
+from app.routes import aluno
+
 
 app = FastAPI(
     title="API Academia Força Local",
@@ -11,6 +13,8 @@ app = FastAPI(
 app.include_router(previsao.router)
 
 app.include_router(frequencia.router)
+
+app.include_router(aluno.router)
 
 @app.get("/")
 def home():
