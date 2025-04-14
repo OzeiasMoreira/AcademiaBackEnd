@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-class aluno(BaseModel):
+class Aluno(BaseModel):
     idade : int
     sexo : str
     frequencia_semanal: int
