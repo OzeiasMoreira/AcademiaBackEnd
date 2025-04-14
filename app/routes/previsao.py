@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.models.aluno import Aluno
+from app.models.aluno import cadastrarAluno as Aluno
 from app.models.modelo_ia import prever
 
 router = APIRouter()
